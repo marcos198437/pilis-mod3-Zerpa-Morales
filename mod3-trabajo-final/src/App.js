@@ -1,20 +1,36 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect} from 'react';
+import React, { Component }  from 'react';
 import './App.css';
-import Locations from './components/Location/Locations';
-import {getLocation} from './service';
+import {Routes, Route} from 'react-router-dom'
+import Home from './routes/Home/Home';
+import LocationDisplay from './routes/Location/LocationDisplay';
+import {datos, getLocation} from './service';
+import {LocationContext } from './context/LocationContext';
 
 function App() {
-  const [listaLocations, setListaLocations] = useState([]);
+  //const [listaLocations, setListaLocations] = useState([]); //una lista vacía 
+  const {location, setLocation} = useContext(LocationContext);
 
-  useEffect(() =>{
+ /* useEffect(() =>{
     getLocation()
-    .then(data => setListaLocations(data))
-    .catch(err => console.log(err))
-  }, [])
+    .then(data => {
+      setListaLocations(data);
+  })
+    .catch(err => console.log(err)) //en caso de error en llamada de API
+  }, []) */ 
+  useEffect(()=>{
+    setLocation(datos);
+  }, []); 
 
   return (
-    <div className="App">
-      <Locations locations={listaLocations}/>
+    <div className='App'>
+   {/* <LocationContext.Provider value={{listaLocations, setListaLocations}}> */}
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/location/:id' element={<LocationDisplay/>}/>
+        
+      </Routes>
+    {/* </LocationContext.Provider> */}
     </div>
   );
 }
