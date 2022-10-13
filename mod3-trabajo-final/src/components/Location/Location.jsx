@@ -15,11 +15,11 @@ const Location = ({location}) => {
     return (
         <div className='location-container'>
         <div className='location'>
-            <h3>Una ubicacion</h3>
-            <h3>Latitud: {latitud}</h3>
-            <h3>Longitud: {longitud}</h3>
-            <h3>Temperatura={temperatura}</h3>
-            <h3>Viento={viento}</h3>
+            <p>{nombre}</p>
+            <p>Latitud= {latitud}</p>
+            <p>Longitud= {longitud}</p>
+            <p>Temperatura= {temperatura}</p>
+            <p>Viento= {viento}</p>
         </div>
         {/* <div className='location-actions'>
         <div className='fav' onClick={handleEliminar}>
@@ -31,7 +31,7 @@ const Location = ({location}) => {
         </div>
         </div>  */}
         </div>
-    )
+    );
 }
 
 export default Location;
