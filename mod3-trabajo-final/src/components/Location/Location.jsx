@@ -1,36 +1,35 @@
-import React from 'react';
-//import { FaHeart, FaRegHeart } from 'react-icons/fa';
+import React, {useContext, useEffect} from 'react';
+import { LocationContext } from '../../context/LocationContext';
+import { getLocation } from '../../service';
 import './Location.css';
+import { RiTempColdFill,RiWindyFill } from 'react-icons/ri';
+import {TiWorld, TiWorldOutline} from "react-icons/ti";
 
 const Location = ({location}) => {
 
-    const {id, nombre, latitud, longitud, temperatura, viento} = location;
-    //const {locationes, setLocationes }= useContext (LocationContext);
+    const {id, nombre, latitud, longitud, imagen, temperatura, viento} = location;
+    console.log(imagen);
+   const {setLocation }= useContext (LocationContext);
     
-   /*  const handleEliminar =(id) =>{
-        const newArray = eliminar.filter((u) => u.id !== id);
-        setEliminar(newArray);
-
-    } */
+/*      useEffect(() => {
+      getLocation()
+                    .then(data => setLocation(data.current_weather))
+                    .catch(error => console.error(error));
+      
+    }, []);   */
+    
     return (
         <div className='location-container'>
-        <div className='location'>
-            <p>{nombre}</p>
-            <p>Latitud= {latitud}</p>
-            <p>Longitud= {longitud}</p>
-            <p>Temperatura= {temperatura}</p>
-            <p>Viento= {viento}</p>
-        </div>
-        {/* <div className='location-actions'>
-        <div className='fav' onClick={handleEliminar}>
-          {isEliminate ? (
-            <FaHeart className='heart'/>
-          ) : (
-            <FaRegHeart/>
-          )}
-        </div>
-        </div>  */}
-        </div>
+            <h1 className="location-title">{nombre}</h1>
+            { imagen === "" ? 
+               <img className="imagen" src={imagen} alt="Imagen Ubicación" /> : 
+               <img className="imagen" src={imagen} alt="Imagen Ubicación" crossOrigin='anonymous' />
+            } 
+            <p><TiWorld />Latitud= {latitud}</p>
+            <p><TiWorldOutline />Longitud= {longitud}</p>
+            <p><RiTempColdFill />Temperatura: {temperatura} °C</p>  
+            <p><RiWindyFill/>Viento: {viento} km/h</p>
+        </div> 
     );
 }
 
