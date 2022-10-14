@@ -23,11 +23,6 @@ const LocationCreate = () =>{
         }
     });
 
-   /*  const getCurrentDate = () => {
-        let d = new Date();
-        return d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear();
-    }
- */
     const onSubmit = (data) =>{
         const locationNew ={
             id: location.length +1,
