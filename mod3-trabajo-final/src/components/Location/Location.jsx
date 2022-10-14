@@ -2,13 +2,8 @@ import React from 'react';
 import './Location.css';
 import { RiTempColdFill,RiWindyFill } from 'react-icons/ri';
 import {TiWorld, TiWorldOutline} from "react-icons/ti";
-import { GrTrash } from "react-icons/gr"; 
-import delet from '../../routes/Delet/delet';
-import { useContext } from 'react';
-import { LocationsContext } from '../../context/LocationsContext';
 
 const Location = ({location}) => {
-  const {locations, setLocations} = useContext(LocationsContext);
 
     const {id, nombre, latitud, longitud, imagen, temperatura, viento} = location;
     //console.log(imagen);
@@ -31,4 +26,5 @@ const Location = ({location}) => {
         </div> 
     );
 }
+
 export default Location;

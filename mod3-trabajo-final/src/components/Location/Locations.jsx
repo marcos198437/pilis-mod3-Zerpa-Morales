@@ -2,10 +2,8 @@ import React from "react";
 import { useContext } from "react";
 import Location from "./Location";
 import './Locations.css'
-import {LocationContext} from '../../context/LocationContext'
 import {getLocation} from '../../service'
-import { LocationsContext } from "../../context/LocationsContext";
-import { GrTrash } from "react-icons/gr";
+import {LocationContext} from '../../context/LocationContext'
 
 // recibe una lista y crea multiples ubicacines 
 const Locations =({location}) => {  
@@ -20,4 +18,4 @@ const Locations =({location}) => {
     )
 }
 
-export default Locations 
+export default Locations

@@ -79,4 +79,4 @@ const LocationCreate = () =>{
         </div>
     );
 };
-export default LocationCreate;
+export default LocationCreate

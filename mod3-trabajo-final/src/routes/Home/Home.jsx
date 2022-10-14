@@ -7,15 +7,7 @@ import { FaPlusSquare } from "react-icons/fa";
 import {Link} from 'react-router-dom';
 
 const Home = () => {
-  const {location,setLocation} = useContext(LocationContext);
-
-   const handleDelete = (id) => {
-    const newArray = location.filter((u) => u.id !== id);
-    setLocation(newArray);
-  };
-  /*const NoHayDatos = () => {
-    return <h1 className="sin-datos">No existe datos para mostrar</h1>;
-  };*/
+  const {location} = useContext(LocationContext);
   
   return (
     <div className='list'>
@@ -31,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home;	 
+export default Home;
