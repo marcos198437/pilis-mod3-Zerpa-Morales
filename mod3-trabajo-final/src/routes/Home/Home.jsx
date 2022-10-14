@@ -10,16 +10,15 @@ import {Link} from 'react-router-dom';
 //import palettoLogo from '../../assets/logo.png';
 
 const Home = () => {
-  const {location} = useContext(LocationContext);
+  const {location,setLocation} = useContext(LocationContext);
 
-  /* const handleDelete = (id) => {
-    const newArray = locations.filter((u) => u.id !== id);
-    setLocations(newArray);
+   const handleDelete = (id) => {
+    const newArray = location.filter((u) => u.id !== id);
+    setLocation(newArray);
   };
-
-  const NoHayDatos = () => {
+  /*const NoHayDatos = () => {
     return <h1 className="sin-datos">No existe datos para mostrar</h1>;
-  }; */
+  };*/
   
   return (
     <div className='list'>
@@ -32,4 +31,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home;	 

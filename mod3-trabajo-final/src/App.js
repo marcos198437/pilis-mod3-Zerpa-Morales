@@ -3,7 +3,7 @@ import React, { Component }  from 'react';
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
 import Home from './routes/Home/Home';
-import LocationDisplay from './routes/Location/LocationDisplay';
+import LocationCreate from './routes/Location/LocationCreate';
 import {datos, getLocation} from './service';
 import {LocationContext } from './context/LocationContext';
 
@@ -25,9 +25,10 @@ function App() {
   return (
     <div className='App'>
    {/* <LocationContext.Provider value={{listaLocations, setListaLocations}}> */}
+      
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/location/create' element={<LocationDisplay/>}/>
+        <Route path='/location/create' element={<LocationCreate/>}/>
       </Routes>
     {/* </LocationContext.Provider> */}
     </div>

@@ -7,6 +7,7 @@ export const datos = [
         temperatura: '',
         viento:'',
     },
+    
     {
         id:2,
         nombre: 'Lib. Gral. San Martín',

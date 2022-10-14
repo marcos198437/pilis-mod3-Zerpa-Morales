@@ -1,16 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, HashRouter } from "react-router-dom";
+import { LocationContext, LocationProvider } from "./context/LocationContext";
+import { LocationsContext } from "./context/LocationsContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <HashRouter>
+      <LocationProvider>
+        <App />
+      </LocationProvider>
+    </HashRouter>
   </React.StrictMode>
 );
 

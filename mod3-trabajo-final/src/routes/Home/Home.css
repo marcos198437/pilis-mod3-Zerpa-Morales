@@ -1,0 +1,12 @@
+.delet{
+    cursor: pointer;
+    height: 34px;
+    display: flex;
+    width: 34px;
+    border: 1px solid #0000005e;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    position: relative;
+    transform: translate();
+}
