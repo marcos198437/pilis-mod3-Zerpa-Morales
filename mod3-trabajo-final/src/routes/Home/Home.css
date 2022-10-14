@@ -1,12 +1,37 @@
-.delet{
-    cursor: pointer;
-    height: 34px;
+.locations-free{
+    font-size: 1.5em;
+    padding:20px 0px 10px 1600px;
+    font-weight: 500;
+    color: black;
+
+}
+
+.create-location-link{
     display: flex;
-    width: 34px;
-    border: 1px solid #0000005e;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    position: relative;
-    transform: translate();
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur( 3.5px);
+    border-radius: 10px;
+    padding: 0 180px;
+    max-width: 500px;
+    position: absolute;
+}
+
+.create-location-icon{
+    color: #02021d;
+
+}
+
+.box-tittle{
+    font-size: 25px;
+    min-width: 165px;
+    width: auto;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    display: flex;
+    height: 50px;
+    padding: 30px 35px 100px 35px;
+    margin-top: 0px;
+    border-radius: 10px;
 }

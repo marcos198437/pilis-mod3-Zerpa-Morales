@@ -16,10 +16,7 @@ const LocationCreate = () => {
     formState: { errors },
   } = useForm({
     defaultValues: {
-      locationName: "San salvador de Jujuy",
-      latitud: -24.2052574,
-      longitud: -65.3405747,
-      imagen: "",
+
     },
   });
 
@@ -48,9 +45,10 @@ const LocationCreate = () => {
   return (
     <div className="location-create-container">
       <h1 className="create-location-title">Crear una nueva ubicación</h1>
-      <span> Ingrese una nueva ubicación</span>
+      <span className='span-fris'> Ingrese una nueva ubicación</span>
+
       <form className="sign-in-form" onSubmit={handleSubmit(onSubmit)}>
-        <input
+        <input className="form-control"
           type="text"
           placeholder="Nombre de la ubicación"
           {...register("locationName", {
@@ -58,7 +56,7 @@ const LocationCreate = () => {
           })}
         />
 
-        <input
+        <input className="form-control"
           type="text"
           placeholder="Latitud"
           {...register("latitud", {
@@ -66,7 +64,7 @@ const LocationCreate = () => {
           })}
         />
 
-        <input
+        <input className="form-control"
           type="text"
           placeholder="Longitud"
           {...register("longitud", {
@@ -74,7 +72,9 @@ const LocationCreate = () => {
           })}
         />
 
-        <input type="text" placeholder="Imagen" {...register("imagen")} />
+        <input className="form-control"
+        type="text" 
+        placeholder="Imagen" {...register("imagen")} />
 
         <button className="btn" type="submit">
           Crear

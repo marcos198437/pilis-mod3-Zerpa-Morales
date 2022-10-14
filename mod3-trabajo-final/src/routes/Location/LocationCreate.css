@@ -1,0 +1,54 @@
+.location-create-container{
+    display: block;
+    padding: 200px;
+}
+.create-location-title{
+    justify-content: center;
+    display: flex;
+    padding: 20px 500px 50px 500px;
+}
+.span-fris{
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.sign-in-form{
+    padding: 30px 300px 30px 300px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form-control{
+    text-align: center;
+    display: flex;
+    width: auto;
+    padding: 0.8rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    border-radius: 5px;
+  
+}
+.btn-back{
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 0 35px 0 35px;
+    font-size: 20px;
+    color: rgb(12, 4, 4);
+    font-weight: bolder;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    align-items: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}

@@ -10,12 +10,16 @@ const Home = () => {
   const { card } = useContext(LocationContext);
 
   return (
-    <div className="list">
-      <div className="create-location">
+    <div className="locations">
+
+      <div className="locations-free">
         <Link className='"create-location-link"' to="location/create">
-          <FaPlusSquare className="create-location-icon" />
-          <span>Agregar Ubicación</span>
+          <FaPlusSquare className="create-location-icon" /> AGREGAR UBICACION
+         
         </Link>
+      </div>
+      <div className="box-tittle">
+        <h1> Lista de Ubciones</h1>
       </div>
       <Locations location={card} />
     </div>

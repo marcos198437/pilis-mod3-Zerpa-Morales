@@ -32,7 +32,7 @@
     transition: background-color 0.5s ease;
   }
 
-  .fav {
+  .del {
     display: flex;
     text-align: center;
     height: 34px;
@@ -46,7 +46,7 @@
     transition: background-color 0.2s ease;
   }
   
-  .fav:hover {
+  .del:hover {
     cursor: pointer;
-    background-color: #64555548;
+    background-color: #35216448;
   }
