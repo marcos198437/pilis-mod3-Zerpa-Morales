@@ -1,13 +1,10 @@
 import { useContext} from 'react';
-import React, { Component }  from 'react';
+import React from 'react';
 import './Home.css'
 import Locations from '../../components/Location/Locations';
-import { datos, getLocation } from '../../service';
 import { LocationContext } from '../../context/LocationContext';
 import { FaPlusSquare } from "react-icons/fa";
 import {Link} from 'react-router-dom';
-//import { ColorPalettesContext } from '../../context/ColorPalettesContext';
-//import palettoLogo from '../../assets/logo.png';
 
 const Home = () => {
   const {location,setLocation} = useContext(LocationContext);
@@ -22,11 +19,14 @@ const Home = () => {
   
   return (
     <div className='list'>
-      <Link className='"create-location-link"' to='location/create'>
-              <FaPlusSquare className="create-location-icon"/>
-              <span>Agregar Ubicación</span>
-      </Link>
+      <div className='create-location'>
+        <Link className='"create-location-link"' to='location/create'>
+                <FaPlusSquare className="create-location-icon"/>
+                <span>Agregar Ubicación</span>
+        </Link>
+      </div>
       <Locations location={location}/>
+      
     </div>
   );
 };

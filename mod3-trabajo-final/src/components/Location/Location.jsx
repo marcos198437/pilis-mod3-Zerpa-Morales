@@ -1,6 +1,7 @@
 import React from 'react';
-//import { FaHeart, FaRegHeart } from 'react-icons/fa';
 import './Location.css';
+import { RiTempColdFill,RiWindyFill } from 'react-icons/ri';
+import {TiWorld, TiWorldOutline} from "react-icons/ti";
 import { GrTrash } from "react-icons/gr"; 
 import delet from '../../routes/Delet/delet';
 import { useContext } from 'react';
@@ -9,37 +10,25 @@ import { LocationsContext } from '../../context/LocationsContext';
 const Location = ({location}) => {
   const {locations, setLocations} = useContext(LocationsContext);
 
-    const {id, nombre, latitud,
-       longitud, temperatura, viento} = location;
-
-       const handleClick = () => {
-        const filteredItems = locations.filter(function(item)
-        {
-          return item.id !== id;
-        });
-        setLocations(filteredItems);
-      }
+    const {id, nombre, latitud, longitud, imagen, temperatura, viento} = location;
+    //console.log(imagen);
+    
+/*      useEffect(() => {
+      getLocation()
+                    .then(data => setLocation(data.current_weather))
+                    .catch(error => console.error(error));
+      
+    }, []);   */
+    
     return (
-      <div className='location-container'>
-      <div className='location'>
-          <h5>{nombre}</h5>
-          <div>
-          <p>Latitud= {latitud}</p>
-          <p>Longitud= {longitud}</p>
-          <p>Temperatura= {temperatura}</p>
-          <p>Viento= {viento}</p>
-      </div>
-          </div>
-      <div className="location-actions">
-   
-              <div className="fav" >
-              <GrTrash className="trash" onClick={() => handleClick()} value={nombre} />
-              </div>
-
-
-      </div>
-
-      </div>
-  );
+        <div className='location-container'>
+            <h1 className="location-title">{nombre}</h1>
+            <img src={imagen} alt='imagen' />
+            <p><TiWorld />Latitud: {latitud}</p>
+            <p><TiWorldOutline />Longitud: {longitud}</p>
+            <p><RiTempColdFill />Temperatura: {temperatura} °C</p>  
+            <p><RiWindyFill/>Viento: {viento} km/h</p>
+        </div> 
+    );
 }
 export default Location;

@@ -23,11 +23,6 @@ const LocationCreate = () =>{
         }
     });
 
-   /*  const getCurrentDate = () => {
-        let d = new Date();
-        return d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear();
-    }
- */
     const onSubmit = (data) =>{
         const locationNew ={
             id: location.length +1,
@@ -37,8 +32,15 @@ const LocationCreate = () =>{
             imagen: data.imagen
         }
 
-        setLocation([...location, locationNew]);
-        navigate('/'); 
+        getLocation(locationNew.latitud, locationNew.longitud)
+        .then(({ current_weather }) => {
+            let auxLocation = {...locationNew, 
+                temperatura: current_weather.temperature, 
+                viento: current_weather.windspeed}
+            setLocation([...location, auxLocation]);
+            navigate('/');
+        })
+        .catch( (error) => console.log(error))
         
     } 
 
