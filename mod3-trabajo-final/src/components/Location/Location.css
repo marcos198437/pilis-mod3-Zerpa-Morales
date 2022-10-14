@@ -6,13 +6,22 @@
     padding: 25px;
   }
   .location-container:hover {
+    background: rgba( 0, 0, 0, 0.2);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 25px;
+  
   }
   
   .location {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
+  }
+
+  .imag-leng{
+    width: 350px;
+    height: 250px;
+
   }
   
   .hex-code {

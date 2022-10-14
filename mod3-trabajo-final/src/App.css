@@ -1,3 +1,6 @@
-.App {
-  background: rgb(212, 222, 233);
+body {
+  background: rgb(154, 194, 235);
+  background: linear-gradient(0deg, rgb(172, 182, 150) 0%, rgb(163, 154, 202) 87%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

@@ -25,7 +25,7 @@ const Location = ({ location }) => {
   return (
     <div className="location-container">
       <h1 className="location-title">{nombre}</h1>
-      <img src={imagen} alt="imagen" />
+      <img className="imag-leng" src={imagen} alt="imagen" />
       <p>
         <TiWorld />
         Latitud: {latitud}
