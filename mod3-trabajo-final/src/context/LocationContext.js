@@ -1,16 +1,18 @@
-import React from 'react';
-import { useState,createContext } from "react";
+import React from "react";
+import { useState, createContext } from "react";
 
 export const LocationContext = createContext({
-    location:[],
-    setLocation: () => {}
+  card: [],
+  setCard: () => {},
 });
 
 export const LocationProvider = ({ children }) => {
-    const [location, setLocation] = useState([]);
-    const  value = {location, setLocation};
+  const [card, setCard] = useState([]);
+  const value = { card, setCard };
 
-    return (
-    <LocationContext.Provider value={value}>{children}</LocationContext.Provider>
-    );
-} ;
+  return (
+    <LocationContext.Provider value={value}>
+      {children}
+    </LocationContext.Provider>
+  );
+};
