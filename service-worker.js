@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/precache-manifest.9fe49004f6405e51a74dff4ca1cbc6e1.js"
+  "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/precache-manifest.8137bb2e08a8def787f49689dd797208.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/index.html", {
+workbox.routing.registerNavigationRoute("/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });

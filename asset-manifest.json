@@ -1,15 +1,15 @@
 {
-  "main.css": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/static/css/main.9ba1f2f2.chunk.css",
-  "main.js": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/static/js/main.9a8b8b0a.chunk.js",
-  "main.js.map": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/static/js/main.9a8b8b0a.chunk.js.map",
-  "static/js/1.23172ffd.chunk.js": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/static/js/1.23172ffd.chunk.js",
-  "static/js/1.23172ffd.chunk.js.map": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/static/js/1.23172ffd.chunk.js.map",
-  "static/js/2.c5114f6d.chunk.js": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/static/js/2.c5114f6d.chunk.js",
-  "static/js/2.c5114f6d.chunk.js.map": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/static/js/2.c5114f6d.chunk.js.map",
-  "runtime~main.js": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/static/js/runtime~main.89995f55.js",
-  "runtime~main.js.map": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/static/js/runtime~main.89995f55.js.map",
-  "static/css/main.9ba1f2f2.chunk.css.map": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/static/css/main.9ba1f2f2.chunk.css.map",
-  "index.html": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/index.html",
-  "precache-manifest.9fe49004f6405e51a74dff4ca1cbc6e1.js": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/precache-manifest.9fe49004f6405e51a74dff4ca1cbc6e1.js",
-  "service-worker.js": "/pilis-mod3-Zerpa-Morales/mod3-trabajo-final/service-worker.js"
+  "main.css": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/static/css/main.9ba1f2f2.chunk.css",
+  "main.js": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/static/js/main.9a8b8b0a.chunk.js",
+  "main.js.map": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/static/js/main.9a8b8b0a.chunk.js.map",
+  "static/js/1.23172ffd.chunk.js": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/static/js/1.23172ffd.chunk.js",
+  "static/js/1.23172ffd.chunk.js.map": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/static/js/1.23172ffd.chunk.js.map",
+  "static/js/2.c5114f6d.chunk.js": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/static/js/2.c5114f6d.chunk.js",
+  "static/js/2.c5114f6d.chunk.js.map": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/static/js/2.c5114f6d.chunk.js.map",
+  "runtime~main.js": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/static/js/runtime~main.2cd668ee.js",
+  "runtime~main.js.map": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/static/js/runtime~main.2cd668ee.js.map",
+  "static/css/main.9ba1f2f2.chunk.css.map": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/static/css/main.9ba1f2f2.chunk.css.map",
+  "index.html": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/index.html",
+  "precache-manifest.8137bb2e08a8def787f49689dd797208.js": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/precache-manifest.8137bb2e08a8def787f49689dd797208.js",
+  "service-worker.js": "/pilis-mod3-Zerpa-Morales/tree/main/mod3-trabajo-final/service-worker.js"
 }
