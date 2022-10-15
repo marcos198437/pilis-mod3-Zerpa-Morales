@@ -22,7 +22,6 @@
   }
   
   .btn-form {
-    min-width: 165px;
     width: auto;
     height: 50px;
     border-radius: 5px;
@@ -30,12 +29,12 @@
     line-height: 50px;
     padding: 0 35px 0 35px;
     font-size: 15px;
-    background-color: black;
-    color: white;
+    color: rgb(24, 18, 18);
     font-weight: bolder;
     border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    align-items: center;
   }

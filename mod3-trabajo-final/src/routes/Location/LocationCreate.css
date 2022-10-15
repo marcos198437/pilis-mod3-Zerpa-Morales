@@ -70,3 +70,11 @@ h1{
     display: flex;
     justify-content: center;
 }
+.btn-back{
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    align-self: center;
+    border-radius: 5px;
+}
