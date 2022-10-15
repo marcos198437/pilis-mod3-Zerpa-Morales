@@ -6,7 +6,7 @@ const Locations = ({ location }) => {
   return (
     <div className="grid">
       {location.length === 0 ? (
-        <span>Lista vacía</span>
+        <span className="span-two">Lista vacía</span>
       ) : (
         location.map((lista) => <Location key={lista.id} location={lista} />)
       )}

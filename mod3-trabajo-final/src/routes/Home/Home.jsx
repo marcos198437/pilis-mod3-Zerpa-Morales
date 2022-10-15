@@ -19,7 +19,7 @@ const Home = () => {
         </Link>
       </div>
       <div className="box-tittle">
-        <h1> Lista de Ubciones</h1>
+        <h1> Lista de Ubicaciones</h1>
       </div>
       <Locations location={card} />
     </div>

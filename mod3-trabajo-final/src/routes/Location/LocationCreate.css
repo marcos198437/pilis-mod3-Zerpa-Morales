@@ -15,9 +15,8 @@
 }
 
 .sign-in-form{
-    padding: 30px 300px 30px 300px;
-    justify-content: center;
-    display: flex;
+    padding: 30px 500px 30px 700px;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -29,6 +28,7 @@
     font-size: 1rem;
     line-height: 1.7;
     border-radius: 5px;
+    margin-top: 10px;
   
 }
 .btn-back{
@@ -41,6 +41,24 @@
     font-size: 20px;
     color: rgb(12, 4, 4);
     font-weight: bolder;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.btn{
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 0 35px 0 35px;
+    font-size: 15px;
+    color: rgb(24, 18, 18);
+    font-weight: bolder;
+    border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
