@@ -12,12 +12,12 @@ const Home = () => {
   return (
     <div className="locations">
 
-      <div className="locations-free">
+      {/* <div className="locations-free">
         <Link className='"create-location-link"' to="location/create">
           <FaPlusSquare className="create-location-icon" /> AGREGAR UBICACION
          
         </Link>
-      </div>
+      </div> */}
       <div className="box-tittle">
         <h1> Lista de Ubicaciones</h1>
       </div>
